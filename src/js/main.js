@@ -7,7 +7,7 @@ const apiKey = "f5033f35557c18d54f4091754b9241d8";
 button.addEventListener('click', ()=>{
 
     const cityInput = inputText.value;
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityInput}&appid=${apiKey}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityInput}&appid=${apiKey}`)
     .then(response=> response.json())
     .then(data=>{
         // console.log(data)
@@ -19,7 +19,7 @@ button.addEventListener('click', ()=>{
                     <li class="desc">${data.weather[0].description}</li>
                     <li class="city">${data.name}</li>
                     <li class="temp">${data.main.temp}°C</li>
-                    <li class="temp"><img class= "weather-icon" src= "http://openweathermap.org/img/w/${icon}.png"/></li>
+                    <li class="temp"><img class= "weather-icon" src= "https://openweathermap.org/img/w/${icon}.png"/></li>
                     
                 </ul>
         
