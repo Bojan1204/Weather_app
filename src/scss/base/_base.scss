@@ -14,11 +14,17 @@ html {
 
 body {
   -webkit-font-smoothing: antialiased;
-  color: $color-text;
   font-family: $font-family-default;
-  min-height: 100%;
-  overflow-x: hidden;
-  text-rendering: optimizeLegibility;
+  // min-height: 100%;
+  // overflow-x: hidden;
+  // text-rendering: optimizeLegibility;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143)) ;
+  color: #fff;
 }
 
 a {
