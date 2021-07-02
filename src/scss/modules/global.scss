@@ -1,0 +1,59 @@
+.container{
+   width: 500px;
+   text-align: center;
+
+   h1{
+       padding: 15px 0;
+   }
+
+   input{
+       height: 35px;
+       width: 300px;
+       border: 0;
+       outline: none;
+       margin: 0 50px;
+       padding-left: 10px;
+       font-size: 16px;
+       font-weight: bold;
+       text-transform: capitalize;
+       box-sizing: border-box;
+   }
+
+   .btn{
+    margin: 10px 0;
+    outline: none;
+    background: transparent;
+    border: 2px solid #fff;
+    color: white;
+    cursor: pointer;
+    transform: translate(10px, 10px);
+    transition: 0.3s ease-in-out;
+
+    &:hover{
+        background: #fff;
+        color: #000;
+    }
+   }
+
+
+   .showData{
+       margin: 80px 0px;
+       line-height: 1.6;
+        ul{
+            list-style-type: none;
+        }
+       .city{
+           font-size: 5rem;
+       }
+
+       .temp{
+           font-size: 4rem;
+           font-weight: bold;
+       }
+
+       .desc{
+           font-size: 2rem;
+           text-transform: capitalize;
+       }
+   }
+}
