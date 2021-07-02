@@ -26,7 +26,6 @@
     border: 2px solid #fff;
     color: white;
     cursor: pointer;
-    transform: translate(10px, 10px);
     transition: 0.3s ease-in-out;
 
     &:hover{
@@ -49,11 +48,17 @@
        .temp{
            font-size: 4rem;
            font-weight: bold;
+
+           .weather-icon{
+            width: 100px;
+        }
        }
 
        .desc{
            font-size: 2rem;
            text-transform: capitalize;
        }
+
+       
    }
 }
