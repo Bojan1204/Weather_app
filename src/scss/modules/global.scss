@@ -24,6 +24,11 @@
     align-items: center;
         }
 
+        @include breakpoint(sm-max) {
+            min-height: 500px;
+                
+            }
+
     }
 
    h1{
@@ -71,21 +76,50 @@
         }
        .city{
            font-size: 5rem;
+           @include breakpoint(sm-max) {
+           font-size: 3rem;
+            
+                
+            }
        }
 
        .temp{
            font-size: 4rem;
            font-weight: bold;
 
+           @include breakpoint(sm-max) {
+            font-size: 2rem;
+             
+                 
+             }
+    
+
+
            .weather-icon{
             width: 100px;
+
+            @include breakpoint(sm-max) {
+                width: 50px;
+
+                 
+                     
+                 }
         }
        }
 
        .desc{
            font-size: 2rem;
            text-transform: capitalize;
+
+           @include breakpoint(sm-max) {
+            font-size: 1.5rem;
+             
+                 
+             }
        }
+
+
+
 
        
    }

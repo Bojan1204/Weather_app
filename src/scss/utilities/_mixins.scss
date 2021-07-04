@@ -55,14 +55,26 @@
   // $query - Defaults to `min-width`.
   // $type - Defaults to `screen`.
 
-  @mixin mq($breakpoint, $query: 'min-width', $type: 'screen') {
-    @if $fix-mqs {
-      @if $fix-mqs >= $breakpoint { @content; }
-    } @else {
-      @media #{$type} and (#{$query}: #{$breakpoint}) { @content; }
+  @mixin breakpoint($media) {
+    @if $media == sm {
+      @media only screen and (min-width: $screen-sm-min) { @content; }
+    }
+    @else if $media == sm-max{
+      @media only screen and (max-width: $screen-sm-max) { @content; }
+    }
+    @else if $media == md-max{
+      @media only screen and (max-width: $screen-md-max) { @content; }
+    }
+    @else if $media == md{
+      @media only screen and (min-width: $screen-md-min) { @content; }
+    }
+    @else if $media == lg {
+      @media only screen and (min-width: $screen-lg-min) { @content; }
+    }
+    @else if $media == xl {
+      @media only screen and (min-width: $screen-xl-min) { @content; }
     }
   }
-
   // Clearfix
   //
   // Nicolas Gallagher's micro clearfix hack
