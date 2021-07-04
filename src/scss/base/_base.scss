@@ -10,6 +10,8 @@ html {
 * {
   &:before,
   &:after { box-sizing: inherit; }
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
@@ -20,7 +22,10 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143)) ;
+  background-image: url('../img/clouds1.jpg');
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
   color: #fff;
 }
 
