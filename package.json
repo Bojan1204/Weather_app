@@ -1,14 +1,14 @@
 {
   "name": "my-weather-app",
   "version": "1.0.0",
-  "description": "This is a starter kit of Bootstrap 4 and Webpack 4",
+  "description": "This is a app who was created in JavaScript, Html and Sass",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server  --config webpack.dev.js --open chrome --watch",
     "build": "webpack --config webpack.prod.js"
   },
   "keywords": [],
-  "author": "Stanislav Vranic - Crowscript",
+  "author": "Bojan Bosnic",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.3.4",
